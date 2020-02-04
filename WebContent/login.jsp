@@ -23,8 +23,7 @@
 		if (nombre != null && nombre.equals("admin") && password != null && password.equals("admin")) {
 			request.getSession().setAttribute("usuario", "admin");
 			response.sendRedirect("admin.jsp");
-		}
-		else{
+		} else {
 			request.getSession().setAttribute("usuario", null);
 		}
 	%>
